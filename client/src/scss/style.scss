@@ -1,0 +1,16 @@
+@import 'partials/index';
+@import 'components/index';
+@import 'sections/index';
+@import 'fontawesome.scss';
+
+
+
+
+
+@use 'components/mixins';
+@use 'components/typography';
+
+
+
+@use 'sections/navbar';
+

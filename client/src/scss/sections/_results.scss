@@ -1,0 +1,86 @@
+@use '../partials/custom' as *;
+
+
+.prompting-box {
+    flex-direction: column;
+
+}
+
+.engagement-box {
+    flex-direction: column;
+}
+
+
+.prompt-pie{
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+.time-box {
+    flex-direction: column;
+    align-items: center;
+
+    h5 {
+        color: $secondary;
+      
+    }
+
+    section {
+        background-color: #e8e8e8;
+        padding: 0.5rem 2.2rem;
+        border-radius: 0.5em;
+        box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+    }
+
+}
+
+
+.score-box {
+
+    h5 {
+        color: $primary;
+    }
+
+    h2 {
+        color: $secondary;
+    }
+
+    section {
+        background-color: #e8e8e8;
+        padding: 1rem 2rem;
+        border-radius: 0.5em;
+        box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+    }
+}
+
+
+.text-area {
+
+    input {
+        width: 800px;
+
+        @include media-breakpoint-down(xl) {
+            width: 690px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            width: 500px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            width: 250px;
+        }
+    }
+ 
+
+    label {
+        color: $primary;
+        font-weight: 700;
+    }
+}

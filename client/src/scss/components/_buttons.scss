@@ -1,0 +1,21 @@
+@use '../partials/custom' as *;
+
+.add-minus {
+    background-color: rgba($primary, 0.6);
+    border-radius: 50%;
+    padding: 0.5rem 0.8rem;
+    border: 0.2rem solid rgba($white, $alpha: 1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    
+
+    i{
+        color: white;
+    }
+
+    &:hover {
+        @include gradient
+    }
+
+}
+
+

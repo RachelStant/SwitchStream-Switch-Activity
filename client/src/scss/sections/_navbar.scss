@@ -1,0 +1,29 @@
+@use '../partials/custom' as *;
+
+.menu {
+    @include gradient;
+
+    li {
+        padding: 0 0.7rem;
+
+        a {
+            color: $white;
+            text-transform: capitalize;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+
+            &:hover {
+                font-weight: 700;
+                color: $secondary;
+            }
+
+        }
+    }
+
+}
+
+
+
+
+

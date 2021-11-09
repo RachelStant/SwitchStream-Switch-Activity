@@ -1,0 +1,68 @@
+@use '../partials/custom' as *;
+
+
+
+.user-form {
+    margin-top: 5rem;
+}
+
+.add-switches {
+    flex-direction: column;
+    align-items: center;
+
+    h5 {
+        color: $secondary;
+    }
+
+    input {
+        text-align: center;
+    }
+}
+
+.add-attempts {
+    flex-direction: column;
+    align-items: center;
+
+    h5 {
+        color: $secondary;
+    }
+
+    input {
+        text-align: center;
+    }
+}
+
+.add-minus-switch {
+
+    input {
+        width: 5rem;
+        margin: 0 1rem;
+    }
+
+    i {
+        
+    }
+
+}
+
+.add-minus-attempt {
+
+    input {
+        width: 5rem;
+        margin: 0 1rem;
+    }
+
+    i {
+        
+    }
+
+}
+
+.attempt-cols {
+    flex-direction: column;
+}
+
+
+.generated-activity {
+    margin-top: 3rem;
+}
