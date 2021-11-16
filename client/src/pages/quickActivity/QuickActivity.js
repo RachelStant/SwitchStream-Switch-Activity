@@ -254,7 +254,7 @@ const EndActivity = ({ CalculateActivityScore, resultsArray, ComputePrompt, Comp
                                  
                             </div>
                       
-
+                                
                                 <div className='row mt-4'>
                                     <div className='col-sm d-flex justify-content-center prompting-box'>
                                         <PromptPie ComputePrompt={ComputePrompt} />
@@ -262,7 +262,6 @@ const EndActivity = ({ CalculateActivityScore, resultsArray, ComputePrompt, Comp
                                     <div className='col-sm d-flex justify-content-center engagement-box'>
                                         <EngagePie ComputeEngage={ComputeEngage} />
                                     </div>
-
 
                                 </div>
 
@@ -289,17 +288,31 @@ const EndActivity = ({ CalculateActivityScore, resultsArray, ComputePrompt, Comp
                                     </div>
 
                                 </div>
-                                <div className='row mt-3'>
-                                    <div className='col d-flex justify-content-center'>
-                                        <small style={{color: 'lightgray'}}>(reload page to reset activity)</small>
+                                
+                                <div className='row'>
+                                    <div className='col d-flex mt-5 justify-content-center'>
+                                    
+                                    <h6 style={{fontFamily: "Poppins"}}>You are our very first testers! Your feedback is crucial to make this app better! <br /> Please take our 2 minute survey.</h6>
+                                  
                                     </div>
 
                                 </div>
 
-                                <div className='row'>
-                                <div className='col-sm d-flex mb-1 mt-2 justify-content-center'>
-                                    <h6 style={{color: '#9ba6a5', fontFamily: "Poppins"}}>Please provide your feedback via our <a href='#'>short survey</a>. Your comments are appreciated!</h6>
+                                <div className='row mt-2'>
+                                    <div className='col-sm d-flex justify-content-center'>
+                                    <div className='survey-div' onClick={() => {window.open("https://s.surveyplanet.com/np86zci6", "_blank");}}>
+                                    Take Survey
+                                    </div>
+                                    </div>
                                 </div>
+                               
+
+                                <div className='row mt-3'>
+                                    <div className='col-sm d-flex justify-content-center'>
+                                        <small style={{color: 'lightgray'}}> (reload page to reset activity)</small>
+                                    </div>
+
+                                    
                                 </div>
 
                       

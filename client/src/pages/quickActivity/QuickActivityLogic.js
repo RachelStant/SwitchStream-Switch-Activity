@@ -382,7 +382,9 @@ useEffect(() => {
         //setPromptArray([{x: 'No prompt', y: (Math.round((Noprompt / TotalLength) * 100) / 100) * 100}, {x: 'Visual prompt',  y: (Math.round((Visprompt / TotalLength) * 100) / 100) * 100}, {x: 'Verbal prompt', y: (Math.round((Verprompt / TotalLength) * 100) / 100) * 100}, {x: 'Physical prompt', y: (Math.round((Phyprompt / TotalLength) * 100) / 100) * 100} ])
         //setEngageArray([{'Engaged': (Math.round((Engaged / TotalLengthEngage) * 100) / 100) * 100, 'SomewhatEngage': (Math.round((SomewhatEngage / TotalLengthEngage) * 100) / 100) * 100, 'NotEngage': (Math.round((NotEngage / TotalLengthEngage) * 100) / 100) * 100 }])
         
+        
         return promptArray;
+        
         
     }
 

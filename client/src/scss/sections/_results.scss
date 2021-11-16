@@ -84,3 +84,27 @@
         font-weight: 700;
     }
 }
+
+
+.survey-div {
+    display:inline-block;
+    color: rgb(124, 124, 124);
+    border:2px solid rgb(148, 148, 148);
+    border-radius: 2em;
+    background:#4ef18f;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    vertical-align: middle;
+    max-width: auto;
+    max-height: auto;
+    text-align: center;
+    padding: 10px 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: large;
+
+    &:hover {
+        border-color: rgba(255,255,255,1);
+        color: rgb(12, 12, 12);
+    }
+}
