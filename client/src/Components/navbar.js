@@ -2,7 +2,7 @@ import React from 'react'
 import QuickActivity from '../pages/quickActivity/QuickActivity';
 import Directions from '../pages/home/Directions';
 import {
-	BrowserRouter as Router,
+	HashRouter as Router,
 	Routes,
 	Route,
 	Link
@@ -11,7 +11,7 @@ import {
 const Navbar = () => {
     return (
 
-		<Router>
+		<Router basename="/">
 
 
         <nav className='navbar navbar-expand-lg navbar-dark menu shadow fixed-top'>
@@ -22,7 +22,7 @@ const Navbar = () => {
             <div className='collapse navbar-collapse justify-content-center' id='navbarNav'>
             <ul class='navbar-nav'>
 					<li class='nav-item'>
-						<Link to="/switchactivity">Switch Activity</Link>
+						<Link to="/">Switch Activity</Link>
 					</li>
 					<li class='nav-item'>
 						<Link to="/directions">Directions</Link>
@@ -35,8 +35,8 @@ const Navbar = () => {
 
 
 		<Routes>
-      <Route path="/directions" element={<Directions />} />
-      <Route path="/switchactivity" element={<QuickActivity />} />
+      <Route exact path="/directions" element={<Directions />} />
+      <Route path="/" element={<QuickActivity />} />
      
   		</Routes>
 
