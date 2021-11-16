@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/SwitchStream-Switch-Activity/static/css/main.69f3bcd8.chunk.css",
-    "main.js": "/SwitchStream-Switch-Activity/static/js/main.c0d98f3a.chunk.js",
-    "main.js.map": "/SwitchStream-Switch-Activity/static/js/main.c0d98f3a.chunk.js.map",
+    "main.js": "/SwitchStream-Switch-Activity/static/js/main.3bc6c237.chunk.js",
+    "main.js.map": "/SwitchStream-Switch-Activity/static/js/main.3bc6c237.chunk.js.map",
     "runtime-main.js": "/SwitchStream-Switch-Activity/static/js/runtime-main.1c2a18c2.js",
     "runtime-main.js.map": "/SwitchStream-Switch-Activity/static/js/runtime-main.1c2a18c2.js.map",
-    "static/js/2.6bf85ed4.chunk.js": "/SwitchStream-Switch-Activity/static/js/2.6bf85ed4.chunk.js",
-    "static/js/2.6bf85ed4.chunk.js.map": "/SwitchStream-Switch-Activity/static/js/2.6bf85ed4.chunk.js.map",
+    "static/js/2.02a100b7.chunk.js": "/SwitchStream-Switch-Activity/static/js/2.02a100b7.chunk.js",
+    "static/js/2.02a100b7.chunk.js.map": "/SwitchStream-Switch-Activity/static/js/2.02a100b7.chunk.js.map",
     "index.html": "/SwitchStream-Switch-Activity/index.html",
     "static/css/main.69f3bcd8.chunk.css.map": "/SwitchStream-Switch-Activity/static/css/main.69f3bcd8.chunk.css.map",
-    "static/js/2.6bf85ed4.chunk.js.LICENSE.txt": "/SwitchStream-Switch-Activity/static/js/2.6bf85ed4.chunk.js.LICENSE.txt",
+    "static/js/2.02a100b7.chunk.js.LICENSE.txt": "/SwitchStream-Switch-Activity/static/js/2.02a100b7.chunk.js.LICENSE.txt",
     "static/media/Switch Stream PNG uncropped.dced3a7e.png": "/SwitchStream-Switch-Activity/static/media/Switch Stream PNG uncropped.dced3a7e.png",
     "static/media/style.scss": "/SwitchStream-Switch-Activity/static/media/fa-solid-900.eeccf4f6.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.1c2a18c2.js",
-    "static/js/2.6bf85ed4.chunk.js",
+    "static/js/2.02a100b7.chunk.js",
     "static/css/main.69f3bcd8.chunk.css",
-    "static/js/main.c0d98f3a.chunk.js"
+    "static/js/main.3bc6c237.chunk.js"
   ]
 }
