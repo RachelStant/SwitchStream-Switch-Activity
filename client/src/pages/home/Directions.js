@@ -7,8 +7,8 @@ const Directions = () => {
         <div className='directions-page'>
             <div className='container'>
                 <div className='row mt-5 mb-4 justify-content-center'>
-                    <div className='col-sm-3 d-flex justify-content-center'>
-                    <img src={logo} className="img-fluid mt-2" alt="company-logo" /> 
+                    <div className='col-sm-6 col-md-6 col-lg-4 justify-content-center'>
+                    <img src={logo} className="img-responsive mt-2" width='100%' alt="company-logo" /> 
                     </div>
                 </div>
             
