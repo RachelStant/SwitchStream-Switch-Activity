@@ -6,9 +6,9 @@ const Directions = () => {
     return (
         <div className='directions-page'>
             <div className='container'>
-                <div className='row mt-5 mb-4'>
-                    <div className='col-sm d-flex justify-content-center'>
-                    <img src={logo} className="img-fluid mt-2" width="25%" height="auto" alt="company-logo" /> 
+                <div className='row mt-5 mb-4 justify-content-center'>
+                    <div className='col-sm-3 d-flex justify-content-center'>
+                    <img src={logo} className="img-fluid mt-2" alt="company-logo" /> 
                     </div>
                 </div>
             
