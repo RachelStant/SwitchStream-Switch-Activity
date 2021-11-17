@@ -373,16 +373,16 @@ useEffect(() => {
         const Verprompt = attemptsArray.map((attempt) => attempt.prompting).filter((prompt) => prompt === 'Verbal prompt').length
         const Phyprompt = attemptsArray.map((attempt) => attempt.prompting).filter((prompt) => prompt === 'Physical prompt').length
 
-
-        if (Visprompt > 0) { promptArray.push({ x: 'Visual \n prompt', y: (Math.round((Visprompt / TotalLength) * 100) / 100) * 100 }) }
-        if (Noprompt > 0) { promptArray.push({ x: 'No prompt', y: (Math.round((Noprompt / TotalLength) * 100) / 100) * 100 }) }
-        if (Verprompt > 0) { promptArray.push({ x: 'Verbal \n prompt', y: (Math.round((Verprompt / TotalLength) * 100) / 100) * 100 }) }
-        if (Phyprompt > 0) { promptArray.push({ x: 'Physical \n Prompt', y: (Math.round((Phyprompt / TotalLength) * 100) / 100) * 100 }) }
+       
+        if (Visprompt > 0) { promptArray.push({ x: 'Visual \n prompt', y: Math.floor((Visprompt / TotalLength) * 100) }) }
+        if (Noprompt > 0) { promptArray.push({ x: 'No prompt', y: Math.floor((Noprompt / TotalLength) * 100) }) }
+        if (Verprompt > 0) { promptArray.push({ x: 'Verbal \n prompt', y: Math.floor((Verprompt / TotalLength) * 100) }) }
+        if (Phyprompt > 0) { promptArray.push({ x: 'Physical \n Prompt', y: Math.floor((Phyprompt / TotalLength) * 100) }) }
         
         //setPromptArray([{x: 'No prompt', y: (Math.round((Noprompt / TotalLength) * 100) / 100) * 100}, {x: 'Visual prompt',  y: (Math.round((Visprompt / TotalLength) * 100) / 100) * 100}, {x: 'Verbal prompt', y: (Math.round((Verprompt / TotalLength) * 100) / 100) * 100}, {x: 'Physical prompt', y: (Math.round((Phyprompt / TotalLength) * 100) / 100) * 100} ])
         //setEngageArray([{'Engaged': (Math.round((Engaged / TotalLengthEngage) * 100) / 100) * 100, 'SomewhatEngage': (Math.round((SomewhatEngage / TotalLengthEngage) * 100) / 100) * 100, 'NotEngage': (Math.round((NotEngage / TotalLengthEngage) * 100) / 100) * 100 }])
         
-        
+        console.log(promptArray)
         return promptArray;
         
         
@@ -398,9 +398,9 @@ useEffect(() => {
         const SomewhatEngage = attemptsArray.map((attempt) => attempt.engagement).filter((engage) => engage === 'Somewhat engaged').length
         const NotEngage = attemptsArray.map((attempt) => attempt.engagement).filter((engage) => engage === 'Not engaged').length
 
-        if (Engaged > 0) { engageArray.push({x: 'Engaged', y: (Math.round((Engaged / TotalLengthEngage) * 100) / 100) * 100}) }
-        if (SomewhatEngage > 0) { engageArray.push({ x: 'Somewhat\n engaged', y: (Math.round((SomewhatEngage / TotalLengthEngage) * 100) / 100) * 100}) } 
-        if (NotEngage > 0) { engageArray.push({ x: 'Not\n engaged', y: (Math.round((NotEngage / TotalLengthEngage) * 100) / 100) * 100}) }
+        if (Engaged > 0) { engageArray.push({x: 'Engaged', y: Math.floor((Engaged / TotalLengthEngage) * 100) }) }
+        if (SomewhatEngage > 0) { engageArray.push({ x: 'Somewhat\n engaged', y: Math.floor((SomewhatEngage / TotalLengthEngage) * 100) }) } 
+        if (NotEngage > 0) { engageArray.push({ x: 'Not\n engaged', y: Math.floor((NotEngage / TotalLengthEngage) * 100) }) }
 
         return engageArray;
 
@@ -420,18 +420,18 @@ useEffect(() => {
         const Visprompt = attemptsArray.map((attempt) => attempt.prompting).filter((prompt) => prompt === 'Visual prompt').length
         const Verprompt = attemptsArray.map((attempt) => attempt.prompting).filter((prompt) => prompt === 'Verbal prompt').length
         const Phyprompt = attemptsArray.map((attempt) => attempt.prompting).filter((prompt) => prompt === 'Physical prompt').length
-        if (Visprompt > 0) { promptEngageArray.push({ name: 'Visual prompt', value: (Math.round((Visprompt / TotalLength) * 100) / 100) * 100 }) }
-        if (Noprompt > 0) { promptEngageArray.push({ name: 'No prompt', value: (Math.round((Noprompt / TotalLength) * 100) / 100) * 100 }) }
-        if (Verprompt > 0) { promptEngageArray.push({ name: 'Verbal prompt', value: (Math.round((Verprompt / TotalLength) * 100) / 100) * 100 }) }
-        if (Phyprompt > 0) { promptEngageArray.push({ name: 'Physical prompt', value: (Math.round((Phyprompt / TotalLength) * 100) / 100) * 100 }) }
+        if (Visprompt > 0) { promptEngageArray.push({ name: 'Visual prompt', value: Math.floor((Visprompt / TotalLength) * 100) }) }
+        if (Noprompt > 0) { promptEngageArray.push({ name: 'No prompt', value: Math.floor((Noprompt / TotalLength) * 100) }) }
+        if (Verprompt > 0) { promptEngageArray.push({ name: 'Verbal prompt', value: Math.floor((Verprompt / TotalLength) * 100) }) }
+        if (Phyprompt > 0) { promptEngageArray.push({ name: 'Physical prompt', value: Math.floor((Phyprompt / TotalLength) * 100) }) }
         // Engagement
         const TotalLengthEngage = attemptsArray.map((attempt) => attempt.engagement).length
         const Engaged = attemptsArray.map((attempt) => attempt.engagement).filter((engage) => engage === 'Engaged').length
         const SomewhatEngage = attemptsArray.map((attempt) => attempt.engagement).filter((engage) => engage === 'Somewhat engaged').length
         const NotEngage = attemptsArray.map((attempt) => attempt.engagement).filter((engage) => engage === 'Not engaged').length
-        if (Engaged > 0) { promptEngageArray.push({name: 'Engaged', value: (Math.round((Engaged / TotalLengthEngage) * 100) / 100) * 100}) }
-        if (SomewhatEngage > 0) { promptEngageArray.push({name: 'Somewhat engaged', value: (Math.round((SomewhatEngage / TotalLengthEngage) * 100) / 100) * 100}) } 
-        if (NotEngage > 0) { promptEngageArray.push({name: 'Not engaged', value: (Math.round((NotEngage / TotalLengthEngage) * 100) / 100) * 100}) }
+        if (Engaged > 0) { promptEngageArray.push({name: 'Engaged', value: Math.floor((Engaged / TotalLengthEngage) * 100) }) }
+        if (SomewhatEngage > 0) { promptEngageArray.push({name: 'Somewhat engaged', value: Math.floor((SomewhatEngage / TotalLengthEngage) * 100) }) } 
+        if (NotEngage > 0) { promptEngageArray.push({name: 'Not engaged', value: Math.floor((NotEngage / TotalLengthEngage) * 100) }) }
 
         
         setPromptEngage([...promptEngageArray])
